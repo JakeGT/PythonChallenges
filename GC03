@@ -1,0 +1,8 @@
+import time
+#for loop to repeat print
+for x in range(10):
+  #for loop will increase x everytime code is looped
+  print(10-x)
+  #print will print out 10 minus x
+  time.sleep(1)
+  #pauses program for 1 second
