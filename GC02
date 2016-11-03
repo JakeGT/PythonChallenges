@@ -1,0 +1,13 @@
+print("Please input a time is 12 hour format not including 'am' or 'pm'")
+timeHour, timeMinute = input().split(":")
+timeHour = int(timeHour)
+print("Please input whether it is 'am' or 'pm'")
+var1 = input()
+
+if var1.lower() == "am":
+	if timeHour < 10:
+		timeHour = "0" + str(timeHour)
+	print("The time in 24 hour format is: " + str(timeHour) + ":" + timeMinute)
+elif var1.lower() == "pm":
+	timeHour += 12
+	print("The time in 24 hour format is: " + str(timeHour) + ":" + timeMinute)
