@@ -1,0 +1,17 @@
+import random
+
+number = random.randrange(1, 100)
+running = True
+
+while running == True:
+  print("Guess a Number")
+  guess = int(input())
+  if guess == number:
+    print ("Correct Guess! You Win")
+    running = False
+  elif guess > number:
+    print ("The number is lower than your guess")
+  elif guess < number:
+    print ("The number is higher than your guess")
+  else:
+    print ("Input invalid")
