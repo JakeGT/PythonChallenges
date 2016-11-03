@@ -1,0 +1,5 @@
+print ("Please input a pyramid size")
+size = int(input())
+
+for x in range(size+1):
+	print("X"*x)
